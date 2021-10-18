@@ -4,6 +4,13 @@
 	<title></title>
 </head>
 <body>
+
+<ul>
+	<li>egoing</li>
+	<li>graphiite</li>
+	<li>leezche</li>
+</ul>
+
 	<script type="text/javascript">
 		// 객체 생성 방법
 		// 1
@@ -25,6 +32,11 @@
 		grades['egoing'] // 10출력
 		grades.k8805	// 6
 		grades['sori'+'algi'] // 80출력
+
+		var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+		for(key in grades){
+			document.write("<li>key : " +key+ " value : " + grades[key]+"</li>");
+		}
 	</script>
 </body>
 </html>
