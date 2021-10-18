@@ -33,10 +33,41 @@
 		grades.k8805	// 6
 		grades['sori'+'algi'] // 80출력
 
+		// for in문;
 		var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
 		for(key in grades){
 			document.write("<li>key : " +key+ " value : " + grades[key]+"</li>");
 		}
+
+		// 객체 key값 안에 객체 생성
+		var grades = {
+			'list' : {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80},
+			// 객에 key값 안에 함수 생성
+			'show' : function(){
+				alert('Hello world');
+			}
+		}
+		// list의 객체 값
+		alert(grades['list']);
+		// list안의 egoing 값 가져오기
+		alert(grades['list']['egoing']);
+
+		// show의 함수 실행
+		alert(grades['show']());
+
+		// 함수가 소속되어있는 객체를 가르키는 this
+		var grades = {
+			'list' : {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80},
+			'show' : function(){
+				for(var name in this.list){
+					console.log(name, this.list[name]);
+				}
+			}
+		}
+		grades.show();
+
+		// grades안에 list와 function을 서로가 연관되어있는 것을
+		// 그룹핑한다 이것을 객체지향프로그래밍이라고 한다.
 	</script>
 </body>
 </html>
