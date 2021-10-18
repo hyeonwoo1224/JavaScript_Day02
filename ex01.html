@@ -19,6 +19,7 @@
 		document.write(members[1].toUpperCase()+"<br />");
 		document.write(members[2].toUpperCase()+"<br />");
 
+		// 배열 추가
 		var li = ['a','b','c','d','e'];
 		// .push로 배열안에 값을 넣기
 		li.push('f');
@@ -35,6 +36,26 @@
 
 		// .splice 삭제할 인덱스 지정후 범위인덱스 지정 값 입력
 		li.splice(1,1,'x','y');
+		alert(li);
+
+		// 배열 제거
+		var li = ['a','b','c','d','e'];
+		// .shift 앞에있는 값 제거
+		li.shift();
+		alert(li);
+
+		// .pop 뒤에 있는 값 제거
+		li.pop();
+		alert(li);
+
+		// 배열 정렬
+		var li = ['c','e','a','b','a'];
+		// .sort 정렬
+		li.sort();
+		alert(li);
+
+		// .reverse 역순으로 정렬
+		li.reverse();
 		alert(li);
 	</script>
 </body>
