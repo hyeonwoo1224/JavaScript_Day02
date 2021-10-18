@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-
+	<ul id="list">
+		<li>empty</li>
+		<li>empty</li>
+		<li>empty</li>
+		<li>empty</li>
+	</ul>
+	<input type="button" value="execute" id="execute_btn"/>
+	<script type="text/javascript">
+		//$('#list li').text('coding everybody');
+		$('#execute_btn').click(function(){
+			$('#list li').text('coding everybody');
+		})
+	</script>
 </body>
 </html>
